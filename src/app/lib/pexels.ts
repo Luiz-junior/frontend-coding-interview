@@ -14,6 +14,6 @@ export async function fetchPhotos() {
 
     return response.data as PexelsResponse;
   } catch (error) {
-    throw new Error("Failed to fetch photos");
+    throw new Error("Failed to fetch photos" + error);
   }
 }

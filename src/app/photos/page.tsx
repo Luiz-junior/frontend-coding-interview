@@ -7,10 +7,11 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { toast, ToastContainer } from "react-toastify";
+import { Photo } from "../types";
 
 export default function PhotosPage() {
   const { user } = useAuth();
-  const [photos, setPhotos] = useState<any[]>([]);
+  const [photos, setPhotos] = useState<Photo[]>([]);
 
   useEffect(() => {
     if (!user) {

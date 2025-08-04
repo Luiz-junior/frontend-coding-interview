@@ -7,7 +7,7 @@ import axios from "axios";
 
 interface SignInFormProps {
   setError: (error: string | null) => void;
-  setUser: (user: any | null) => void;
+  setUser: (user: { email: string } | null) => void;
 }
 
 export default function SigInForm({ setError, setUser }: SignInFormProps) {
@@ -34,9 +34,11 @@ export default function SigInForm({ setError, setUser }: SignInFormProps) {
       } else {
         setError(result.error || "Inválid Credentials");
       }
-    } catch (error: any) {
-      const errorMsg =
-        error.response?.data?.error || error.message || "Erro na autenticação";
+    } catch (error: unknown) {
+      let errorMsg = "Authentication Error";
+
+      if (error instanceof Error) errorMsg = error.message;
+
       setError(errorMsg);
     }
   };
