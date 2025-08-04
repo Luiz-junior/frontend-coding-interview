@@ -48,4 +48,5 @@ Image Optimization: Use next/image with dynamic sizes for better performance.
 Accessibility: Ensure WCAG compliance (e.g., ARIA labels).
 CI/CD: Set up GitHub Actions pipelines for automated testing and deployment on Vercel.
 
-Note: I couldn't access dev mode in Figma so the spaces won't be exactly the same but I tried to make it as close as possible.
+#### Note: 
+I couldn't access dev mode in Figma so the spaces won't be exactly the same but I tried to make it as close as possible.
