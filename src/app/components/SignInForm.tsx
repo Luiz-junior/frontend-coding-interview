@@ -19,10 +19,13 @@ export default function SigInForm({ setError, setUser }: SignInFormProps) {
     const password = formData.get("password") as string;
 
     try {
-      const response = await axios.post("http://localhost:3000/api/login", {
-        email,
-        password,
-      });
+      const response = await axios.post(
+        `${process.env.NEXT_PUBLIC_API_URL}/login`,
+        {
+          email,
+          password,
+        }
+      );
       const result = response.data;
 
       if (result.success) {

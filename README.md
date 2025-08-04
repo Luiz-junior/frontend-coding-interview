@@ -12,6 +12,7 @@ A Next.js application that allows users to log in and view photos from the Pexel
 Clone the repository.
 Install dependencies: npm install.
 Create a .env.local file with your Pexels API key: NEXT_PUBLIC_PEXELS_API_KEY=Mz0iC21IFLz9HuN8ypIbJ54l8OuGnpW2IsVoQrYBEyagQXt1YeBEA7H0
+NEXT_PUBLIC_API_URL=http://localhost:3000/api
 
 Start the development server: npm run dev.
 Access the app at http://localhost:3000.
