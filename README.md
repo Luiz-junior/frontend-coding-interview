@@ -1,3 +1,9 @@
+
+
+
+https://github.com/user-attachments/assets/b73b456d-c266-4071-978c-3682b0d5c716
+
+
 # Clever Pexels App
 A Next.js application that allows users to log in and view photos from the Pexels API, with a "like" or "dislike" feature.
 
